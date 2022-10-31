@@ -1,0 +1,58 @@
+[
+    {
+        "home_name": "Medimurje Cakovec",
+        "id": 207061,
+        "date": "2020-09-02",
+        "away_name": "Rudes",
+        "ft_score": "4 - 0",
+        "scheduled": "18:00"
+    },
+    {
+        "home_name": "Sesvete",
+        "id": 207226,
+        "date": "2020-09-04",
+        "away_name": "Bijelo Brdo",
+        "ft_score": "1 - 1",
+        "scheduled": "15:00"
+    },
+    {
+        "home_name": "Rudes",
+        "id": 207527,
+        "date": "2020-09-05",
+        "away_name": "Inter Zapresic",
+        "ft_score": "1 - 1",
+        "scheduled": "14:30"
+    },
+    {
+        "home_name": "Junak",
+        "id": 208134,
+        "date": "2020-09-09",
+        "away_name": "Hrvatski Dragovoljac",
+        "ft_score": "1 - 4",
+        "scheduled": "14:30"
+    },
+    {
+        "home_name": "Dubrava Zagreb",
+        "id": 208336,
+        "date": "2020-09-11",
+        "away_name": "Inter Zapresic",
+        "ft_score": "0 - 2",
+        "scheduled": "14:30"
+    },
+    {
+        "home_name": "Orijent 1919",
+        "id": 208743,
+        "date": "2020-09-12",
+        "away_name": "Medimurje Cakovec",
+        "ft_score": "0 - 1",
+        "scheduled": "14:30"
+    },
+    {
+        "home_name": "Hrvatski Dragovoljac",
+        "id": 208744,
+        "date": "2020-09-12",
+        "away_name": "Dugopolje",
+        "ft_score": "2 - 1",
+        "scheduled": "14:30"
+    }
+]

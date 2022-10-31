@@ -1,0 +1,36 @@
+html 
+    head 
+        title OAuth2/OpenID login demo
+    body
+        h1 Welcome #{user.split('"')[3]}        
+        a(href='/', title='Home') Home        
+        h1 2. HNL 
+        h2 Tablica
+        table
+            tr 
+                th KLUB 
+                th BODOVI 
+            each elem,i in tablica
+                tr 
+                    td !{elem.rank}. !{elem.name} &nbsp;&nbsp;&nbsp;&nbsp;
+                    td !{elem.points}
+            
+
+        h2 15. kolo
+        table
+            tr 
+                th UTAKMICA 
+                th REZULTAT
+            each elem, i in kola
+                if (elem.id > 207000 && elem.id < 208000)
+                    tr
+                        td !{elem.home_name} : !{elem.away_name} &nbsp;&nbsp;&nbsp;&nbsp;
+                        td !{elem.ft_score}
+        h2 16. kolo
+        each elem, i in kola 
+            if elem.id > 208000
+                p !{elem.home_name} : !{elem.away_name} => !{elem.ft_score}
+                p ____________________________________________________
+        
+        
+        h2 Komentari

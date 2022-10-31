@@ -1,0 +1,44 @@
+html 
+    head 
+        title 2.HNL
+    body
+        if username
+            h1 Welcome #{username}
+
+        ul 
+            li: a(href='/', title='Home') HOME
+            li: a(href='/private') PRIVATE           
+            if username
+                li: form(action="/logout", method="get")
+                    input(type="submit", value="Logout " + username)
+            else
+                li: a(href='/sign-up', title='Sign up') SIGN UP
+
+        h1 2. HNL 
+        h2 Tablica
+        table
+            tr 
+                th KLUB 
+                th BODOVI 
+            each elem,i in tablica
+                tr 
+                    td !{elem.rank}. !{elem.name} &nbsp;&nbsp;&nbsp;&nbsp;
+                    td !{elem.points}
+            
+
+        h2 15. kolo
+        table
+            tr 
+                th UTAKMICA 
+                th REZULTAT
+            each elem, i in kola
+                if (elem.id > 207000 && elem.id < 208000)
+                    tr
+                        td !{elem.home_name} : !{elem.away_name} &nbsp;&nbsp;&nbsp;&nbsp;
+                        td !{elem.ft_score}
+        h2 16. kolo
+        each elem, i in kola 
+            if elem.id > 208000
+                p !{elem.home_name} : !{elem.away_name} => !{elem.ft_score}
+                p ____________________________________________________
+        

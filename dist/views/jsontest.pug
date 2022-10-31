@@ -1,0 +1,32 @@
+html 
+    head 
+        title OAuth2/OpenID login demo
+    body
+        if username
+            h1 Welcome #{username}
+        h1 1. Leg
+        each elem,i in json
+            p !{elem.id}-!{elem.name}
+        ul 
+            li: a(href='/', title='Home') Home
+            li: a(href='/private') Private content             
+            if username
+                li: form(action="/logout", method="get")
+                    input(type="submit", value="Logout " + username)
+            else
+                li: a(href='/sign-up', title='Sign up') Sign up 
+
+        if post != undefined
+            .row
+                .offset-sm-2.col-sm-8
+                    .alert.alert-success(role="alert").text-center
+                        p Your new comment was created successfully!
+
+            .row
+                .offset-sm-2.col-sm-8
+                    form(method="post")
+                        .form-group
+                            label(for="body") Comment content
+                            textarea.form-control#post(name="body", rows="6", required)
+                        button.btn.btn-primary.submit-btn(type="submit") Submit
+        

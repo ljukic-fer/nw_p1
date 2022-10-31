@@ -1,0 +1,12 @@
+extends layout
+
+block variables
+  - var date = comm.date
+
+block content
+  h2.text-center= date
+
+  .row
+    .offset-sm-2.col-sm-8
+      .body !{comm.body}
+      p.author Written by #{comm.authorName}
